@@ -131,27 +131,28 @@ main {
   flex-flow: column;
   justify-content: space-evenly;
   text-align: center;
-  margin: 5% auto 50px;
-  width: 265px;
+  margin: 5% auto 20px;
+  width: 275px;
   height: 400px;
   background-color: #fff;
-  padding: 10px;
+  padding: 10px 10px 20px 10px;
   box-shadow: 0 0 30px 2px #ccc;
 }
 main img {
   width: 100%;
 }
-main h2,
-main p {
-  width: 90%;
-  margin: auto;
-}
+
 main h2 {
   font-weight: 700;
   color: var(--darkblue);
+  margin: 10px 0;
 }
 main p {
   color: var(--grayishBlue);
+  font-size: 13px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
 }
 .attribution {
   font-size: 11px;
