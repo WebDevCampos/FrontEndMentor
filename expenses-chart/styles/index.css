@@ -1,0 +1,283 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+:root {
+  --softRed: #ec775f;
+  --cyan: #76b5bc;
+  --darkBrown: #382314;
+  --mediumBrown: #93867b;
+  --cream: #f8e9dd;
+  --veryPaleOrange: #fffaf5;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  background-color: var(--cream);
+  line-height: 1;
+  margin: auto;
+  max-width: 1440px;
+  font-family: "DM Sans", sans-serif;
+}
+
+main {
+  width: 375px;
+  margin: 10% auto 0;
+}
+header {
+  background-color: var(--softRed);
+  padding: 15px;
+}
+hr {
+  width: 100%;
+}
+header,
+.chart-main-info {
+  border-radius: 15px;
+}
+.header-wrapper {
+  width: 95%;
+  margin: auto;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.header-info {
+  color: var(--veryPaleOrange);
+}
+.header-info p {
+  font-size: 13px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+.circles,
+.circles::before {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.circles {
+  background-color: var(--darkBrown);
+  position: relative;
+}
+
+.circles::before {
+  content: "";
+  border: 1px solid #fff;
+  right: 12px;
+  position: absolute;
+}
+.chart-main-info,
+.day-name div {
+  margin: 10px 0;
+}
+
+.day-amount {
+  border-radius: 5px;
+}
+.chart-main-info {
+  background-color: var(--veryPaleOrange);
+  padding: 10px 30px;
+}
+.chart-main-info h1 {
+  color: var(--darkBrown);
+  margin: 10px 0 -40px 0;
+}
+.week-data,
+.day-info,
+.day-name,
+.header-wrapper,
+.total-info {
+  display: flex;
+}
+.header-wrapper,
+.week-data,
+.total-info {
+  justify-content: space-between;
+}
+.week-data {
+  flex-flow: column;
+  height: 250px;
+}
+.day-info,
+.day-name {
+  justify-content: space-around;
+  width: 100%;
+}
+.day-info {
+  flex-flow: row-reverse;
+  transform: rotate(180deg);
+  height: 100%;
+}
+
+.day-name div {
+  color: var(--mediumBrown);
+  width: 100%;
+  text-align: center;
+}
+.day-amount {
+  width: 10%;
+  background-color: var(--softRed);
+  position: relative;
+}
+.day-amount:hover {
+  background-color: var(--cyan);
+}
+
+.tooltip {
+  position: absolute;
+  bottom: -20px;
+  left: -3px;
+  transform: rotate(180deg);
+  text-align: center;
+  font-size: 12px;
+}
+.total-info {
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+.total-month p:nth-child(2),
+.last-month p:nth-child(2) {
+  margin-top: 5px;
+}
+.total-month p:first-child,
+.last-month p:nth-child(2) {
+  color: var(--mediumBrown);
+}
+.total-month p:nth-child(2) {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--darkBrown);
+}
+
+.last-month {
+  text-align: end;
+}
+.last-month:first-child {
+  font-weight: 700;
+  color: var(--darkBrown);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+}
