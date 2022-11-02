@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [This very repo](https://github.com/WebDevCampos/newsFEMENTOR)
+- Solution URL: [This very repo](https://github.com/WebDevCampos/FrontEndMentor/tree/main/news_FEMENTOR)
 - Live Site URL: [Hosted by Netlify](https://newsfementor.netlify.app/)
 
 ## My process
