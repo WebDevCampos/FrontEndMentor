@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" href="./assets/images/favicon.ico" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <main class="grid-container">
+      <header class="header">
+        <a href="#">
+          <img src="./assets/images/logo.svg" alt="Company logo" />
+        </a>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">New</a>
+          <a href="#">Popular</a>
+          <a href="#">Trending</a>
+          <a href="#">Categories</a>
+
+          <img
+            src="./assets/images/icon-menu.svg"
+            class="icon"
+            alt="menu icon"
+          />
+        </nav>
+      </header>
+
+      <section class="main-content">
+        <article>
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="./assets/images/image-web-3-mobile.jpg"
+            />
+
+            <img
+              src="./assets/images/image-web-3-desktop.jpg"
+              alt="Web3 Representation"
+            />
+          </picture>
+
+          <div class="main-article">
+            <div>
+              <h1>The Bright Future of Web 3.0?</h1>
+            </div>
+
+            <div>
+              <p>
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <a class="main-article--button" href="#">READ MORE</a>
+            </div>
+          </div>
+        </article>
+
+        <aside class="side-content">
+          <h2>New</h2>
+
+          <article>
+            <h3>Hydrogen VS Electric Cars</h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </article>
+
+          <article style="border-top: 1px solid; border-bottom: 1px solid">
+            <h3>The Downsides of AI Artistry</h3>
+            <p>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </article>
+
+          <article>
+            <h3>Is VC Funding Drying Up?</h3>
+            <p>
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </article>
+        </aside>
+      </section>
+
+      <section class="most-read">
+        <article>
+          <img
+            src="./assets/images/image-retro-pcs.jpg"
+            alt="PCs Retro Styled"
+          />
+          <div>
+            <p>01</p>
+            <h3>Reviving Retro PCs</h3>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </article>
+
+        <article>
+          <img src="./assets/images/image-top-laptops.jpg" alt="Laptops" />
+          <div>
+            <p>02</p>
+            <h3>Top 10 Laptops of 2022</h3>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </article>
+
+        <article>
+          <img
+            src="./assets/images/image-gaming-growth.jpg"
+            alt="Growth of gaming"
+          />
+          <div>
+            <p>03</p>
+            <h3>The Growth of Gaming</h3>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </article>
+      </section>
+
+      <footer class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+          Frontend Mentor
+        </a>
+        . Coded by
+        <a href="https://github.com/WebDevCampos">Marcus Rangel</a>
+        .
+      </footer>
+
+      <aside class="sidenav">
+        <div>
+          <img
+            src="./assets/images/icon-menu-close.svg"
+            class="closenav"
+            alt="close menu icon"
+          />
+        </div>
+        <nav>
+          <a href="#" class="closenav">New</a>
+          <a href="#" class="closenav">Popular</a>
+          <a href="#" class="closenav">Trending</a>
+          <a href="#" class="closenav">Categories</a>
+        </nav>
+      </aside>
+    </main>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
