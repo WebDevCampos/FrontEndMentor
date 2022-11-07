@@ -47,6 +47,9 @@ header h1 span {
   position: relative;
   top: -0.2rem;
 }
+header p {
+  font-weight: 700;
+}
 header p:hover {
   color: var(--blue);
 }
@@ -62,7 +65,8 @@ article,
 header p:hover,
 article h3 span:first-child:hover,
 article h3 span:last-child:hover,
-.unread:hover {
+.unread:hover,
+.private-message--show {
   cursor: pointer;
 }
 article h3 span:nth-child(2) {
@@ -70,10 +74,11 @@ article h3 span:nth-child(2) {
   font-weight: 400;
 }
 article h3 span:first-child {
+  font-size: 1.8rem;
   color: var(--veryDarkBlue);
 }
 article h3 span:first-child:hover,
-article h3 span:last-child:hover {
+article h3 span:nth-child(3):hover {
   color: var(--blue);
 }
 
