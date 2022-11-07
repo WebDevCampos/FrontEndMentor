@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="/assets/images/icons8-notification-32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Frontend Mentor | Notifications page</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>
+          Notifications
+          <span></span>
+        </h1>
+
+        <p class="mark-as-read">Mark all as read</p>
+      </header>
+
+      <article class="read unread">
+        <div class="card-top">
+          <img
+            src="./assets/images/avatar-mark-webber.webp"
+            alt="User Avatar"
+          />
+          <div>
+            <h3>
+              <span>Mark Webber</span>
+              <span>reacted to your recent post</span>
+              <span>My first tournament today!</span>
+              <span class="unread--red-dot"></span>
+            </h3>
+            <p>1m ago</p>
+          </div>
+        </div>
+
+        <!-- <div class="hidden">
+          <p>
+            Hello, thanks for setting up the Chess Club. I've been a member for
+            a few weeks now and I'm already having lots of fun and improving my
+            game.
+          </p>
+        </div> -->
+      </article>
+
+      <article class="read unread">
+        <div class="card-top">
+          <img
+            src="./assets/images/avatar-angela-gray.webp"
+            alt="User Avatar"
+          />
+          <div>
+            <h3>
+              <span>Angela Gray</span>
+              <span>followed</span>
+              <span>you</span>
+              <span class="unread--red-dot"></span>
+            </h3>
+            <p>5m ago</p>
+          </div>
+        </div>
+
+        <!-- <div class="hidden">
+          <p>
+            Hello, thanks for setting up the Chess Club. I've been a member for
+            a few weeks now and I'm already having lots of fun and improving my
+            game.
+          </p>
+        </div> -->
+      </article>
+
+      <article class="read unread">
+        <div class="card-top">
+          <img
+            src="/assets/images/avatar-jacob-thompson.webp"
+            alt="User Avatar"
+          />
+          <div>
+            <h3>
+              <span>Jacob Thompson</span>
+              <span>has joined your group</span>
+              <span>Chess Club</span>
+              <span class="unread--red-dot"></span>
+            </h3>
+            <p>1 day ago</p>
+          </div>
+        </div>
+
+        <!-- <div class="hidden">
+          <p>
+            Hello, thanks for setting up the Chess Club. I've been a member for
+            a few weeks now and I'm already having lots of fun and improving my
+            game.
+          </p>
+        </div> -->
+      </article>
+
+      <article>
+        <div class="card-top">
+          <img
+            src="/assets/images/avatar-rizky-hasanuddin.webp"
+            alt="User Avatar"
+          />
+          <div>
+            <h3>
+              <span>Rizky Hasanuddin</span>
+              <span>sent you</span>
+              <span class="private-message">a private message</span>
+            </h3>
+            <p>5 days ago</p>
+          </div>
+        </div>
+
+        <div class="private-message--hidden private-message--show">
+          <p>
+            Hello, thanks for setting up the Chess Club. I've been a member for
+            a few weeks now and I'm already having lots of fun and improving my
+            game.
+          </p>
+        </div>
+      </article>
+
+      <article>
+        <div class="card-top">
+          <img
+            src="/assets/images/avatar-kimberly-smith.webp"
+            alt="User Avatar"
+          />
+          <div>
+            <h3>
+              <span>Kimberly Smith</span>
+              <span>commented on</span>
+              <span>your picture</span>
+            </h3>
+            <p>1 week ago</p>
+          </div>
+          <div style="margin-left: auto">
+            <img src="/assets/images/image-chess.webp" alt="chess player" />
+          </div>
+        </div>
+
+        <!-- <div class="hidden">
+          <p>
+            Hello, thanks for setting up the Chess Club. I've been a member for
+            a few weeks now and I'm already having lots of fun and improving my
+            game.
+          </p>
+        </div> -->
+      </article>
+
+      <article>
+        <div class="card-top">
+          <img
+            src="/assets/images/avatar-nathan-peterson.webp"
+            alt="User Avatar"
+          />
+          <div>
+            <h3>
+              <span>Nathan Peterson</span>
+              <span>reacted to your recent post</span>
+              <span>5 end-game strategies to increase your win rate</span>
+            </h3>
+            <p>2 weeks ago</p>
+          </div>
+        </div>
+
+        <!-- <div class="hidden">
+          <p>
+            Hello, thanks for setting up the Chess Club. I've been a member for
+            a few weeks now and I'm already having lots of fun and improving my
+            game.
+          </p>
+        </div> -->
+      </article>
+
+      <article>
+        <div class="card-top">
+          <img src="/assets/images/avatar-anna-kim.webp" alt="User Avatar" />
+          <div>
+            <h3>
+              <span>Anna Kim</span>
+              <span>left the group</span>
+              <span>Chess Club</span>
+            </h3>
+            <p>2 weeks ago</p>
+          </div>
+        </div>
+
+        <!-- <div class="hidden">
+          <p>
+            Hello, thanks for setting up the Chess Club. I've been a member for
+            a few weeks now and I'm already having lots of fun and improving my
+            game.
+          </p>
+        </div> -->
+      </article>
+
+      <footer class="attribution">
+        <p>
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+            Frontend Mentor
+          </a>
+          . Coded by
+          <a href="https://github.com/WebDevCampos">Marcus Rangel</a>
+          .
+        </p>
+      </footer>
+    </main>
+
+    <script src="/scripts/index.js"></script>
+  </body>
+</html>

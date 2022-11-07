@@ -1,0 +1,22 @@
+@import url(./reset.css);
+:root {
+  --red: #f65351;
+  --blue: #0a317b;
+  --white: #ffffff;
+  --veryLightGrayishBlue: #f7fafd;
+  --lightGrayishBlue1: #e5effa;
+  --lightGrayishBlue2: #dde7ee;
+  --grayishBlue: #939dae;
+  --darkGrayishBlue: #5e6778;
+  --veryDarkBlue: #1c202b;
+}
+body {
+  background-color: var(--veryLightGrayishBlue);
+}
+main {
+  width: clamp(37.5rem, 50%, 144rem);
+  position: relative;
+  margin: 0 auto;
+  background-color: var(--white);
+  padding: 4rem;
+}

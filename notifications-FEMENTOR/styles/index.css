@@ -1,0 +1,147 @@
+@import url(./reset.css);
+:root {
+  --red: #f65351;
+  --blue: #0a317b;
+  --white: #ffffff;
+  --veryLightGrayishBlue: #f7fafd;
+  --lightGrayishBlue1: #e5effa;
+  --lightGrayishBlue2: #dde7ee;
+  --grayishBlue: #939dae;
+  --darkGrayishBlue: #5e6778;
+  --veryDarkBlue: #1c202b;
+  --footerLinkColor: #3e52a3;
+}
+* {
+  transition: 0.5s;
+}
+body {
+  background-color: var(--veryLightGrayishBlue);
+  color: var(--darkGrayishBlue);
+}
+main {
+  width: clamp(375px, 65%, 1440px);
+  position: relative;
+  margin: 1.5rem auto;
+  background-color: var(--white);
+  padding: 4rem;
+  border-radius: 1rem;
+  transition: 0.2s;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1 {
+  color: var(--veryDarkBlue);
+  font-size: 2.5rem;
+}
+header h1 span {
+  display: inline-flex;
+  padding: 0.3rem 1rem;
+  font-size: 1.8rem;
+  margin-left: 0.5rem;
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 0.5rem;
+  position: relative;
+  top: -0.2rem;
+}
+header p:hover {
+  color: var(--blue);
+}
+article,
+.read {
+  margin: 2rem 0;
+  border: 1px solid var(--white);
+  padding: 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+  border-radius: 1rem;
+}
+header p:hover,
+article h3 span:first-child:hover,
+article h3 span:last-child:hover,
+.unread:hover {
+  cursor: pointer;
+}
+article h3 span:nth-child(2) {
+  color: var(--grayishBlue);
+  font-weight: 400;
+}
+article h3 span:first-child {
+  color: var(--veryDarkBlue);
+}
+article h3 span:first-child:hover,
+article h3 span:last-child:hover {
+  color: var(--blue);
+}
+
+article img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.card-top {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.card-top:first-child div h3,
+.card-top:first-child div p {
+  margin: 0 1rem;
+}
+
+.unread {
+  background-color: var(--lightGrayishBlue1);
+}
+.unread--red-dot {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--red);
+  border-radius: 50%;
+}
+.private-message--hidden {
+  display: none;
+}
+.private-message--show {
+  display: block;
+  width: calc(100% - 50px);
+  padding: 2rem;
+  margin-left: auto;
+  height: auto;
+  opacity: 1;
+  transition: background 1s;
+  border: 1px solid var(--lightGrayishBlue1);
+}
+.private-message--show:hover {
+  background: var(--veryLightGrayishBlue);
+}
+.private-message--show p {
+  letter-spacing: 0.1rem;
+  line-height: 3rem;
+}
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+}
+.attribution a {
+  color: var(--footerLinkColor);
+}
+@media screen and (max-width: 500px) {
+  main {
+    max-width: 375px;
+  }
+  header h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  header h1 span {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+  }
+  article {
+    padding: 1rem;
+  }
+}
