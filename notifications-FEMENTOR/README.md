@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [This Very Repo](https://your-solution-url.com)
+- Solution URL: [This Very Repo](https://github.com/WebDevCampos/FrontEndMentor/tree/main/notifications-FEMENTOR)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
