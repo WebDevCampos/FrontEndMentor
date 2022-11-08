@@ -129,7 +129,13 @@ footer {
 .attribution a {
   color: var(--footerLink);
 }
+@media screen and (max-width:920px){
+.main-text {
+    width: 90%;
+    margin: 2rem auto;
+  }
 
+}
 @media screen and (max-width: 768px) {
   * {
     text-align: center;
@@ -157,11 +163,7 @@ footer {
   .text-container {
     height: 80vh;
   }
-  .main-text {
-    width: 90%;
-    margin: 2rem auto;
-  }
-
+  
   .stats {
     flex-flow: column;
     align-items: center;
