@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!--#region Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <!--#endregion Fonts-->
+    <link rel="stylesheet" href="/styles/index.css" />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <style></style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="text-container">
+          <div class="main-text">
+            <section>
+              <h1>
+                Get
+                <span class="insights">insights</span>
+                that help your business grow.
+              </h1>
+
+              <p class="main-paragraph">
+                Discover the benefits of data analytics and make better
+                decisions regarding revenue, customer experience, and overall
+                efficiency.
+              </p>
+            </section>
+
+            <div class="stats">
+              <div>
+                <h2>10k+</h2>
+                <p>companies</p>
+              </div>
+              <div>
+                <h2>314</h2>
+                <p>templates</p>
+              </div>
+              <div>
+                <h2>12M+</h2>
+                <p>queries</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="/images/image-header-mobile.jpg"
+            />
+            <img
+              src="/images/image-header-desktop.jpg"
+              alt="People working on data analytics"
+            />
+          </picture>
+        </div>
+      </div>
+
+      <footer class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+          Frontend Mentor
+        </a>
+        . Coded by
+        <a href="https://github.com/WebDevCampos">Marcus Rangel</a>
+        .
+      </footer>
+    </main>
+  </body>
+</html>
