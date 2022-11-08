@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [This very repo](https://your-solution-url.com)
+- Solution URL: [This very repo](https://your-solution-url.com](https://github.com/WebDevCampos/FrontEndMentor/tree/main/StatsCard-FEMENTOR)
 - Live Site URL: [Hosted by Netlify](https://statsfementor.netlify.app/)
 
 ## My process
