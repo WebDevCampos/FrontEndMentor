@@ -85,11 +85,18 @@ footer {
   color: var(--white);
   font-weight: 700;
 }
+.stats h2 span {
+  font-size: inherit;
+}
 .stats p {
   text-transform: uppercase;
   font-family: var(--LexendDecaFont);
   font-weight: 400;
   color: var(--slightlyTransparentWhite2);
+}
+.stats p:hover {
+  cursor: pointer;
+  color: var(--softViolet);
 }
 .image-container {
   position: relative;
