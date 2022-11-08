@@ -247,6 +247,8 @@ header,
   transform: rotate(180deg);
   text-align: center;
   font-size: 12px;
+background-color: var(--softRed);
+color:#fff;
 }
 .total-info {
   align-items: flex-end;
