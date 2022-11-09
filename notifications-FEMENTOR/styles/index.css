@@ -19,7 +19,7 @@ body {
   color: var(--darkGrayishBlue);
 }
 main {
-  width: clamp(375px, 65%, 1440px);
+  max-width:120rem;
   position: relative;
   margin: 1.5rem auto;
   background-color: var(--white);
@@ -137,7 +137,7 @@ article img {
 }
 @media screen and (max-width: 500px) {
   main {
-    max-width: 375px;
+    max-width: 37.5rem;
   }
   header h1 {
     font-size: 2rem;
