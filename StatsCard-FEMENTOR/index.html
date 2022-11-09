@@ -19,7 +19,7 @@
       rel="stylesheet"
     />
     <!--#endregion Fonts-->
-    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
 
     <title>Frontend Mentor | Stats preview card component</title>
 
@@ -27,71 +27,69 @@
   </head>
   <body>
     <main>
-      <div class="container">
-        <div class="text-container">
-          <div class="main-text">
-            <section>
-              <h1>
-                Get
-                <span class="insights">insights</span>
-                that help your business grow.
-              </h1>
+      <div class="text-container">
+        <div class="main-content">
+          <div>
+            <h1>
+              Get
+              <span class="insights">insights</span>
+              that help your business grow.
+            </h1>
 
-              <p class="main-paragraph">
-                Discover the benefits of data analytics and make better
-                decisions regarding revenue, customer experience, and overall
-                efficiency.
-              </p>
-            </section>
+            <p class="main-paragraph">
+              Discover the benefits of data analytics and make better decisions
+              regarding revenue, customer experience, and overall efficiency.
+            </p>
+          </div>
 
-            <div class="stats">
-              <div>
-                <h2>
+          <div class="stats">
+            <ul>
+              <li>
+                <p>
                   <span class="tenK">0</span>
                   k+
-                </h2>
+                </p>
                 <p>companies</p>
-              </div>
-              <div>
-                <h2><span class="moreThan300">0</span></h2>
+              </li>
+              <li>
+                <p><span class="moreThan300">0</span></p>
                 <p>templates</p>
-              </div>
-              <div>
-                <h2>
+              </li>
+              <li>
+                <p>
                   <span class="twelveM">0</span>
                   M+
-                </h2>
+                </p>
                 <p>queries</p>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
-        </div>
-
-        <div class="image-container">
-          <picture>
-            <source
-              media="(max-width: 768px)"
-              srcset="/images/image-header-mobile.jpg"
-            />
-            <img
-              src="/images/image-header-desktop.jpg"
-              alt="People working on data analytics"
-            />
-          </picture>
         </div>
       </div>
 
-      <footer class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-          Frontend Mentor
-        </a>
-        . Coded by
-        <a href="https://github.com/WebDevCampos">Marcus Rangel</a>
-        .
-      </footer>
+      <div class="image-container">
+        <picture>
+          <source
+            media="(max-width:768px)"
+            srcset="./images/image-header-mobile.jpg"
+          />
+          <img
+            src="./images/image-header-desktop.jpg"
+            alt=""
+            aria-hidden="“true”"
+          />
+        </picture>
+      </div>
     </main>
-
-    <script src="/scripts/index.js"></script>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor
+      </a>
+      . Coded by
+      <a href="https://github.com/WebDevCampos">Marcus Rangel</a>
+      .
+    </footer>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>

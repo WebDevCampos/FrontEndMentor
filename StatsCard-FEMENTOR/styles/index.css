@@ -11,82 +11,91 @@
   --interFont: "Inter", sans-serif; /*main text font family*/
   --LexendDecaFont: "Lexend Deca", sans-serif; /*stats text font family*/
 }
-
+body,
+main,
+.text-container,
+.main-content,
+.stats ul {
+  display: flex;
+}
+body,
+.text-container,
+.main-content {
+  flex-flow: column;
+}
+img,
+.main-content {
+  height: 100%;
+}
 body {
   background-color: var(--veryDarkBlue);
   font-family: var(--interFont);
-  height: 50vh;
-}
-img {
-  width: 100%;
+  height: 100vh;
 }
 main,
-img,
+.attribution {
+  border-radius: 1rem;
+}
+main,
 .text-container,
-.image-container {
-  height: 500px;
+.main-content,
+.stats ul {
+  justify-content: space-between;
 }
 main {
-  max-width: 1440px;
-  margin: 3rem auto 0;
+  max-width: 1200px;
+  height: 400px;
+  margin: 2rem auto 0;
   background-color: var(--darkDesaturatedBlue);
 }
-main {
-  border-radius: 0.5rem 0.5rem 0 0;
+
+.image-container {
+  border-radius: 0 1rem 1rem 0;
 }
-img,
-.image-container,
-.image-container::before {
-  border-radius: 0 0.5rem 0 0;
+img {
+  mix-blend-mode: multiply;
+  opacity: 0.8;
 }
-footer {
-  border-radius: 0 0 0.5rem 0.5rem;
-}
-.container {
-  display: flex;
-  justify-content: space-between;
-  color: var(--white);
+p {
+  margin: 0.5rem 0;
 }
 .insights {
-  font-size: 100%;
+  font-size: inherit;
   color: var(--softViolet);
 }
 .text-container,
-.image-container {
+.image-container,
+img {
   width: 100%;
 }
-.main-text {
-  width: 60%;
-  height: 80%;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
+.text-container,
+.stats li p:first-child {
+  color: var(--white);
+}
+.main-content {
+  width: 70%;
   margin: 3rem auto;
 }
-.main-text h1 {
-  margin-bottom: 2rem;
-  font-size: clamp(3.8rem, 3vw, 4rem);
+.main-content h1 {
+  font-size: clamp(3.8rem, 50%, 4rem);
 }
-.main-text p {
+.main-paragraph {
   color: var(--slightlyTransparentWhite1);
+  margin-top: 3rem;
+  font-size: clamp(1.6rem, 50%, 4rem);
   line-height: 3rem;
 }
-.stats {
-  display: flex;
-  justify-content: space-between;
+.image-container {
+  background-color: var(--softViolet);
 }
-.stats div {
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-  align-items: start;
-}
-.stats h2 {
-  color: var(--white);
+
+.stats li p:first-child {
   font-weight: 700;
+  font-size: 2.4rem;
 }
-.stats h2 span {
+.stats li p span {
   font-size: inherit;
+  margin-right: -0.6rem;
 }
 .stats p {
   text-transform: uppercase;
@@ -98,24 +107,6 @@ footer {
   cursor: pointer;
   color: var(--softViolet);
 }
-.image-container {
-  position: relative;
-  width: 100%;
-}
-.image-container::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: rgb(108, 7, 202);
-  opacity: 0.5;
-}
-
-.flex-col-btw {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
-}
 .attribution,
 .attribution a {
   font-size: 1.1rem;
@@ -125,65 +116,42 @@ footer {
   background-color: var(--gray);
   padding: 1rem;
   order: 3;
+  margin: 1rem auto;
 }
 .attribution a {
   color: var(--footerLink);
 }
-@media screen and (max-width:920px){
-.main-text {
+@media screen and (max-width: 900px) {
+  .main-content {
+    padding: 1rem;
     width: 90%;
-    margin: 2rem auto;
   }
-
 }
 @media screen and (max-width: 768px) {
-  * {
+  main {
+    max-width: 375px;
+    height: 900px;
+  }
+
+  main,
+  .stats ul {
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
   }
-  img,
-  .image-container,
-  .image-container::before {
-    border-radius: 0.5rem 0.5rem 0 0;
-  }
-  footer {
-    border-radius: 0 0 0.5rem 0.5rem;
-  }
-  main,
-  img,
-  .text-container,
-  .image-container {
-    height: auto;
-  }
-  main {
-    max-width: 500px;
-  }
-  .container {
-    flex-flow: column;
-  }
+  .stats ul,
   .text-container {
-    height: 80vh;
+    height: 100%;
   }
-  
-  .stats {
-    flex-flow: column;
-    align-items: center;
-    margin: 2rem 0;
-  }
-  .stats div {
-    align-items: center;
+
+  .stats ul {
     margin: 3rem 0;
   }
   .text-container {
     order: 2;
   }
-
   .image-container {
-    order: 1;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  main {
-    max-width: 375px;
+    border-radius: 1rem 1rem 0 0;
   }
 }
