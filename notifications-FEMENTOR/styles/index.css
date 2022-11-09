@@ -63,22 +63,22 @@ article,
   border-radius: 1rem;
 }
 header p:hover,
-article h3 span:first-child:hover,
-article h3 span:last-child:hover,
+article h2 span:first-child:hover,
+article h2 span:last-child:hover,
 .unread:hover,
 .private-message--show {
   cursor: pointer;
 }
-article h3 span:nth-child(2) {
+article h2 span:nth-child(2) {
   color: var(--grayishBlue);
   font-weight: 400;
 }
-article h3 span:first-child {
+article h2 span:first-child {
   font-size: 1.8rem;
   color: var(--veryDarkBlue);
 }
-article h3 span:first-child:hover,
-article h3 span:nth-child(3):hover {
+article h2 span:first-child:hover,
+article h2 span:nth-child(3):hover {
   color: var(--blue);
 }
 
@@ -91,9 +91,11 @@ article img {
   display: flex;
   margin-bottom: 2rem;
 }
-.card-top:first-child div h3,
-.card-top:first-child div p {
+.card-top:first-child div h2 {
   margin: 0 1rem;
+}
+.card-top:first-child div p {
+  margin: 1rem;
 }
 
 .unread {
