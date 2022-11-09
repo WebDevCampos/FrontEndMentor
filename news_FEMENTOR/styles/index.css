@@ -34,7 +34,8 @@ header {
 nav a {
   margin: 0 0.625rem;
 }
-nav a:hover {
+nav a:hover,
+.sidenav-links a:hover {
   color: var(--softRed);
 }
 .grid-container,
@@ -168,20 +169,20 @@ nav a:hover {
   cursor: pointer;
 }
 
-.sidenav div {
+.closenav-button-x {
   font-size: 3.125rem;
   text-align: end;
   padding: 1.875rem;
 }
 
-.sidenav nav {
+.sidenav-links {
   display: flex;
   flex-flow: column;
   justify-content: space-around;
   height: 50%;
   margin-left: 1.875rem;
 }
-.sidenav nav a {
+.sidenav-links a {
   font-size: 1.5625rem;
   font-weight: 400;
 }
