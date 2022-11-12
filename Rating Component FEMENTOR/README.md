@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [This very repo](https://your-solution-url.com)
-- Live Site URL: [Hosted by Netlify](https://your-live-site-url.com)
+- Solution URL: [This very repo](https://github.com/WebDevCampos/FrontEndMentor/tree/main/Rating%20Component%20FEMENTOR)
+- Live Site URL: [Hosted by Netlify](https://ratingcomponentfementor.netlify.app/)
 
 ## My process
 
