@@ -20,7 +20,7 @@ body {
 }
 main {
   max-width: 37.5rem;
-  height: 35rem;
+  height: 38rem;
   background: radial-gradient(
     at top right,
     var(--dark-blue),
@@ -74,7 +74,7 @@ form {
   transform: rotateX(0deg);
 }
 .card-front {
-  width: 90%;
+  width: 85%;
   margin: 0 50%;
   transform: translateX(-50%);
 }
@@ -95,7 +95,7 @@ form {
   border-radius: 50%;
   width: 1.5rem;
   height: 1.5rem;
-  background-color: var(--medium-grey);
+  background-color: var(--dark-blue);
 }
 
 .rating-values {
@@ -106,13 +106,13 @@ form {
 }
 .rating-values label {
   border-radius: 50%;
-  background: var(--medium-grey);
+  background: var(--dark-blue);
   width: 3rem;
   height: 3rem;
   padding: 0.5rem;
   display: inline-grid;
   place-items: center;
-  font-size: clamp(2.2rem, 1.4vw, 3rem);
+  font-size: clamp(1.2rem, 1vw, 3rem);
 }
 button {
   width: 100%;
@@ -132,9 +132,18 @@ input[type="radio"]:checked + label {
 button:hover {
   cursor: pointer;
 }
+.rating-values label:hover {
+  background-color: var(--medium-grey);
+  font-weight: 700;
+}
+button:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
 
 .selected-result {
-  background-color: var(--medium-grey);
+  background: var(--dark-blue);
+
   color: var(--orange);
   border-radius: 1.5rem;
   padding: 0.5rem 1rem;
