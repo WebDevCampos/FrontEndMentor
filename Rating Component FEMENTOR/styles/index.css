@@ -1,0 +1,159 @@
+@import url(./reset.css);
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: #252d37;
+  --very-dark-blue: #121417;
+  --font-overpass: "Overpass", sans-serif;
+}
+body {
+  background: var(--very-dark-blue);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-overpass);
+}
+main {
+  max-width: 37.5rem;
+  height: 35rem;
+  background: radial-gradient(
+    at top right,
+    var(--dark-blue),
+    var(--very-dark-blue)
+  );
+  padding: 1rem;
+  border-radius: 1.5rem;
+  perspective: 100rem;
+  -webkit-perspective: 100rem;
+}
+
+footer {
+  max-width: 37.5rem;
+}
+h1,
+h2 {
+  color: var(--white);
+  font-weight: 700;
+}
+h1 {
+  font-size: clamp(3rem, 3vw, 3.2rem);
+}
+p {
+  color: var(--light-grey);
+  font-size: clamp(1.5rem, 1.4vw, 1.7rem);
+}
+h1,
+p {
+  margin: 2rem 0;
+}
+form {
+  margin: 3rem 0 0;
+}
+.inner-card {
+  width: 37.5rem;
+  margin: 2% auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  position: relative;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+.card-front,
+.card-back {
+  position: absolute;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: rotateX(0deg);
+}
+.card-front {
+  width: 90%;
+  margin: 0 50%;
+  transform: translateX(-50%);
+}
+
+.card-back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+.card-back img {
+  max-width: 50%;
+}
+.star {
+  padding: 1rem;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--medium-grey);
+}
+
+.rating-values {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+}
+.rating-values label {
+  border-radius: 50%;
+  background: var(--medium-grey);
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem;
+  display: inline-grid;
+  place-items: center;
+  font-size: clamp(2.2rem, 1.4vw, 3rem);
+}
+button {
+  width: 100%;
+  background: var(--orange);
+  margin: 2rem 0 0;
+  border: 0;
+  border-radius: 2rem;
+  padding: 0.7rem;
+  font-size: clamp(1.5rem, 2vw, 1.7rem);
+  color: var(--white);
+  letter-spacing: 0.3rem;
+}
+input[type="radio"]:checked + label {
+  background-color: var(--orange);
+}
+.rating-values label:hover,
+button:hover {
+  cursor: pointer;
+}
+
+.selected-result {
+  background-color: var(--medium-grey);
+  color: var(--orange);
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  width: 50%;
+  font-weight: 700;
+}
+
+.card-front p,
+.appreciate {
+  line-height: 2;
+  margin: 2rem 0;
+}
+.attribution {
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  background: var(--white);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
