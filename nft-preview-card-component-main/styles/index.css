@@ -1,0 +1,62 @@
+@import url(./reset.css);
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --footer-link: hsl(228, 45%, 44%);
+  --outfit-font: "Outfit", sans-serif;
+}
+body {
+  background: var(--main-bg);
+  font-family: var(--outfit-font);
+  color: var(--white);
+}
+main {
+  max-width: clamp(32.5rem, 32.5rem + 3vw, 37.5rem);
+  margin: 2% auto 0;
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+img {
+  max-width: 100%;
+}
+main,
+img {
+  border-radius: 1.5rem;
+}
+main div {
+  height: clamp(4rem, 4rem + 1vw, 5rem);
+  margin: 5rem 0 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+h1 {
+  font-size: clamp(2.5rem, 2.5rem + 1vw, 4rem);
+}
+p {
+  font-size: clamp(1.3rem, 1.3rem + 1vw, 2.2rem);
+  margin: 2rem 0;
+}
+
+.avatar-section {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem 0 0;
+}
+.creator-avatar {
+  max-width: clamp(4.5rem, 4rem + 1vw, 100%);
+}
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+}
+.attribution a {
+  color: var(--footer-link);
+}
