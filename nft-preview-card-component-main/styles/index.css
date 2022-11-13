@@ -7,6 +7,11 @@
   --line: hsl(215, 32%, 27%);
   --white: hsl(0, 0%, 100%);
   --footer-link: hsl(228, 45%, 44%);
+  --outfit-font: "Outfit", sans-serif;
+}
+body {
+  background: var(--main-bg);
+  font-family: var(--outfit-font);
 }
 .attribution {
   font-size: 1.1rem;
