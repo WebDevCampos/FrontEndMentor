@@ -16,11 +16,7 @@ body {
 }
 main {
   max-width: clamp(32.5rem, 32.5rem + 3vw, 37.5rem);
-<<<<<<< HEAD
   margin: 1% auto 0;
-=======
-  margin: 2% auto 0;
->>>>>>> 9232017ea95c399a2f5374df4d2cf6460379a90f
   background: var(--card-bg);
   padding: 2rem;
   border-radius: 1rem;
@@ -32,25 +28,10 @@ main,
 img {
   border-radius: 1.5rem;
 }
-<<<<<<< HEAD
-
-=======
-main div {
-  height: clamp(4rem, 4rem + 1vw, 5rem);
-  margin: 5rem 0 0;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-}
-h1 {
-  font-size: clamp(2.5rem, 2.5rem + 1vw, 4rem);
-}
->>>>>>> 9232017ea95c399a2f5374df4d2cf6460379a90f
 p {
   font-size: clamp(1.3rem, 1.3rem + 1vw, 2.2rem);
   margin: 2rem 0;
 }
-<<<<<<< HEAD
 .product,
 .value-and-time,
 .avatar-section {
@@ -92,15 +73,6 @@ p {
 .avatar-section span {
   font-size: inherit;
   color: var(--soft-blue);
-=======
-
-.avatar-section {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 5rem 0 0;
->>>>>>> 9232017ea95c399a2f5374df4d2cf6460379a90f
 }
 .creator-avatar {
   max-width: clamp(4.5rem, 4rem + 1vw, 100%);
