@@ -24,8 +24,49 @@
     <title>Frontend Mentor | NFT preview card component</title>
   </head>
   <body>
-    Equilibrium #3429 Our Equilibrium collection promotes balance and calm.
-    0.041 ETH 3 days left Creation of Jules Wyvern
+    <main>
+      <img src="./images/image-equilibrium.jpg" alt="NFT Equilibrium" />
+
+      <div>
+        <h1>Equilibrium #3429</h1>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+      </div>
+      <div
+        style="
+          display: flex;
+          flex-flow: row;
+          justify-content: space-between;
+          align-items: center;
+        "
+      >
+        <div style="display: flex; flex-flow: row; align-items: center">
+          <img
+            src="./images/icon-ethereum.svg"
+            alt=""
+            aria-hidden="true"
+            style="margin: 0 0.5rem"
+          />
+          <p>0.041 ETH</p>
+        </div>
+        <div style="display: flex; flex-flow: row; align-items: center">
+          <img
+            src="./images/icon-clock.svg"
+            alt=""
+            aria-hidden="true"
+            style="margin: 0 0.5rem"
+          />
+          <p>3 days left</p>
+        </div>
+      </div>
+      <div class="avatar-section">
+        <img
+          src="./images/image-avatar.png"
+          alt="Creator of Equilibrium Jules Wyvern"
+          class="creator-avatar"
+        />
+        <p>Creation of Jules Wyvern</p>
+      </div>
+    </main>
 
     <footer class="attribution">
       Challenge by
