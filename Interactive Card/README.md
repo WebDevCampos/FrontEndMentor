@@ -68,8 +68,11 @@ Every project has its particularities and requisites that demands from us develo
 - Frontend Mentor - [@WebDevCampos](https://www.frontendmentor.io/profile/WebDevCampos)
 - Github - [Marcus Rangel](https://github.com/WebDevCampos)
 - Linkedin - [Marcus Rangel](https://www.linkedin.com/in/marcus-rangel-webdev/)
+- CodePen - [webdevcampos](https://codepen.io/webdevcampos)
 
 ## Acknowledgments
 
 I'm trully impressed about the quality of [@ceosphere](https://www.frontendmentor.io/profile/Cheosphere)'s work!
 I often look at his work in order to check if I'm in the right way. I hope someday I can write such a clean code.
+
+Hats off to [K-ro](https://codepen.io/K-ro) who has an excellent [pen](https://codepen.io/) about [Force maxlength input on android](https://codepen.io/K-ro/pen/NPWBNO)
