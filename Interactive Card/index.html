@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="/images/favicon-32x32.png" />
+
+    <!--#region Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!--#endregion Fonts-->
+
+    <link rel="stylesheet" href="styles/index.css" />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <main>
+      <div class="cards-section">
+        <div class="card-front">
+          <div class="card-front-inner">
+            <img src="images/card-logo.svg" class="card-logo" alt="card logo" />
+
+            <h1 class="card-front-number">0000 0000 0000 0000</h1>
+
+            <div style="display: flex; justify-content: space-between">
+              <p class="person-name">JANE APPLESEED</p>
+              <p>
+                <span class="front-month">00</span>
+                /
+                <span class="front-year">00</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-back">
+          <div class="card-back-inner">
+            <p class="card-back-cvc">000</p>
+          </div>
+        </div>
+      </div>
+
+      <form class="form-data">
+        <div class="card-name">
+          <label>CARDHOLDER NAME</label>
+          <input
+            type="text"
+            placeholder="e.g. Jane Appleseed"
+            name="cardholder_name"
+            class="cardholder-name"
+            autocomplete="off"
+            minlength="10"
+            maxlength="17"
+          />
+          <p class="not-empty-name"></p>
+        </div>
+        <div class="card-number">
+          <label>CARD NUMBER</label>
+          <input
+            type="text"
+            placeholder="e.g. 1234 5678 9123 0000"
+            minlength="19"
+            maxlength="19"
+            name="cardholder_number"
+            class="cardholder-number"
+          />
+          <p class="not-empty-number"></p>
+        </div>
+
+        <div class="date-cvc">
+          <div class="exp-date">
+            <label>EXP. DATE (MM/YY)</label>
+            <div class="exp-date-inputs">
+              <div style="display: flex; flex-direction: column">
+                <input
+                  type="text"
+                  placeholder="MM"
+                  name="card_month"
+                  class="month"
+                  minlength="2"
+                  maxlength="2"
+                />
+                <p class="not-empty-month"></p>
+              </div>
+              <div style="display: flex; flex-direction: column">
+                <input
+                  type="text"
+                  placeholder="YY"
+                  name="card_year"
+                  class="year"
+                  minlength="2"
+                  maxlength="2"
+                />
+                <p class="not-empty-year"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cvc">
+            <label>CVC</label>
+            <input
+              type="text"
+              placeholder="e.g. 123"
+              name="card_cvc"
+              class="cvc-value"
+              minlength="3"
+              maxlength="3"
+            />
+            <p class="not-empty-cvc"></p>
+          </div>
+        </div>
+
+        <button class="confirm-btn">Confirm</button>
+      </form>
+
+      <form class="form-complete">
+        <img
+          src="images/icon-complete.svg"
+          style="width: 10rem; margin: 0 auto"
+        />
+        <p style="font-size: 3.8rem">THANK YOU</p>
+        <p>We've added your card details</p>
+        <button class="confirm-btn" href="index.html">Continue</button>
+      </form>
+    </main>
+
+    <script src="/scripts/index.js"></script>
+  </body>
+</html>
