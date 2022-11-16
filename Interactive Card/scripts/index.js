@@ -18,13 +18,25 @@ const notEmptyCVC = document.querySelector(".not-empty-cvc");
 const validName = /^[a-zA-Z\s]*$/;
 const validNumber = /^[0-9\s]*$/;
 cardDataForm.addEventListener("keyup", (e) => {
+  /*Set the max value forinputs on Android*/
+  const setMaxForAndroid = (max, inputField) => {
+    inputField.value.length > max
+      ? (inputField.value = inputField.value.substring(0, max))
+      : null;
+  };
+  setMaxForAndroid(17, cardHolderName);
+  setMaxForAndroid(19, cardNumber);
+  setMaxForAndroid(2, expDateMonth);
+  setMaxForAndroid(2, expDateYear);
+  setMaxForAndroid(3, cvcValue);
+  /*Set the max value forinputs on Android*/
   e.key == "Backspace" ? (e.target.value = "") : null;
 
   e.target == cardHolderName
     ? (cardFrontName.textContent = e.target.value.toUpperCase())
-    : (e.target == cardNumber && cardNumber.value.length / 4 == 1) ||
-      cardNumber.value.length / 9 == 1 ||
-      cardNumber.value.length / 14 == 1
+    : (e.target == cardNumber && cardNumber.value.length == 4) ||
+      cardNumber.value.length == 9 ||
+      cardNumber.value.length == 14
     ? (cardNumber.value += " ")
     : e.target == cardNumber
     ? (cardFrontNumber.textContent = e.target.value)
@@ -59,9 +71,11 @@ cardDataForm.addEventListener("submit", (e) => {
 
   const validateName = (field, placeholderField, text, onlyValid) => {
     if (!field.value) {
+      placeholderField.classList.add("show");
       placeholderField.textContent = text;
       field.style.border = "1px solid red";
     } else if (validName.test(field.value) == false) {
+      placeholderField.classList.add("show");
       placeholderField.textContent = onlyValid;
       field.style.border = "1px solid red";
     } else if (field.value || validName.test(field.value) == true) {
@@ -71,9 +85,11 @@ cardDataForm.addEventListener("submit", (e) => {
   };
   const validateNumber = (field, placeholderField, text, onlyValid) => {
     if (!field.value) {
+      placeholderField.classList.add("show");
       placeholderField.textContent = text;
       field.style.border = "1px solid red";
     } else if (validNumber.test(field.value) == false) {
+      placeholderField.classList.add("show");
       placeholderField.textContent = onlyValid;
       field.style.border = "1px solid red";
     } else if (field.value || validNumber.test(field.value) == true) {
