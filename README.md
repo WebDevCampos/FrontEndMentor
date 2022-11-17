@@ -1,5 +1,5 @@
 
-# FrontEndMentor Challenges
+# Frontend Mentor Challenges
 
 I've found this excellent site to practice my frontend abilities.
 [Frontend Mentor](https://www.frontendmentor.io/)
