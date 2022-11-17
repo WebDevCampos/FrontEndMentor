@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [This very repo]()
+- Solution URL: [This very repo](https://github.com/WebDevCampos/FrontEndMentor/tree/main/Order%20Summary%20Card)
 - Live Site URL: [Hosted by Netlify](https://ordersumfementor.netlify.app/)
 
 ## My process
