@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [This very repo](https://your-solution-url.com)
+- Solution URL: [This very repo](https://github.com/WebDevCampos/FrontEndMentor/tree/main/3%20Column%20Card%20Component)
 - Live Site URL: [Hosted by Netlify](https://threecolumnfementor.netlify.app/)
 
 ## My process
