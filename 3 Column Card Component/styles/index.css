@@ -1,0 +1,121 @@
+@import url(./reset.css);
+:root {
+  --sedan-bg: hsl(31, 77%, 52%);
+  --suv-bg: hsl(184, 100%, 22%);
+  --lux-bg: hsl(179, 100%, 13%);
+  --paragraphs: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+  --font-Lexend-Deca: "Lexend Deca", sans-serif;
+  --font-Big-Sholders: "Big Shoulders Display", cursive;
+  --footer-link: hsl(228, 45%, 44%);
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height:100vh;
+    font-family:var(--font-Lexend-Deca);
+}
+main {
+  max-width: 100rem;
+  display: flex;
+  margin: 1rem auto 0 ;
+}
+
+.sedan-section {
+  background: var(--sedan-bg);
+  border-radius: 1rem 0 0 1rem;
+}
+
+.sedan-section .learn-more-btn {
+  color: var(--sedan-bg);
+}
+
+.suv-section {
+  background: var(--suv-bg);
+}
+.suv-section .learn-more-btn {
+  color: var(--suv-bg);
+}
+
+.lux-section {
+  background: var(--lux-bg);
+  border-radius: 0 1rem 1rem 0;
+}
+.lux-section .learn-more-btn {
+  color: var(--lux-bg);
+}
+.sedan-section,
+.suv-section,
+.lux-section {
+  padding: 4rem;
+}
+.sedan-section .learn-more-btn:hover,.suv-section .learn-more-btn:hover,.lux-section .learn-more-btn:hover {
+  color: var(--very-light-gray);
+}
+.text-section {
+  margin: 3rem 0 2rem 1rem ;
+}
+
+.title {
+  color: var(--very-light-gray);
+  font-family: var(--font-Big-Sholders);
+  font-weight: 700;
+  font-size: clamp(5rem, 2vw, 6rem);
+}
+.description {
+  color: var(--paragraphs);
+  font-family: var(--font-Lexend-Deca);
+  line-height: 2;
+  margin: 4rem 0 6rem 0;
+  font-size:1.7rem;
+}
+.learn-more-btn {
+  padding: 1.5rem;
+  border-radius: 5rem;
+  background: var(--very-light-gray);
+   border:1px solid var(--very-light-gray);
+  text-decoration: none;
+  display: inline-block;
+  width: 80%;
+  text-align: center;
+  font: 1.8rem var(--font-Lexend-Deca);
+}
+.learn-more-btn:hover{
+  background:transparent;
+ 
+}
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+  margin:1rem 0;
+  background:var(--very-light-gray);
+  padding:.3rem;
+  border-radius:.3rem;
+  
+}
+.attribution a {
+  color: var(--footer-link);
+
+}
+
+@media screen and (max-width:60rem){
+  body {
+  display: grid;
+  place-content: center;
+  height:auto
+}
+  main{
+    max-width:32rem;
+    flex-direction: column
+  }
+  
+.sedan-section { 
+  border-radius: 1rem 1rem 0 0;
+}
+  
+.lux-section {  
+  border-radius: 0 0 1rem 1rem;
+}
+  
+}
