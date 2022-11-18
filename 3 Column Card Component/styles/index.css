@@ -13,13 +13,14 @@
 body {
   display: grid;
   place-content: center;
-  height:100vh;
-    font-family:var(--font-Lexend-Deca);
+  height: 100vh;
+  font-family: var(--font-Lexend-Deca);
+  background: var(--very-light-gray);
 }
 main {
   max-width: 100rem;
   display: flex;
-  margin: 1rem auto 0 ;
+  margin: 1rem auto 0;
 }
 
 .sedan-section {
@@ -50,11 +51,13 @@ main {
 .lux-section {
   padding: 4rem;
 }
-.sedan-section .learn-more-btn:hover,.suv-section .learn-more-btn:hover,.lux-section .learn-more-btn:hover {
+.sedan-section .learn-more-btn:hover,
+.suv-section .learn-more-btn:hover,
+.lux-section .learn-more-btn:hover {
   color: var(--very-light-gray);
 }
 .text-section {
-  margin: 3rem 0 2rem 1rem ;
+  margin: 3rem 0 2rem 1rem;
 }
 
 .title {
@@ -68,54 +71,50 @@ main {
   font-family: var(--font-Lexend-Deca);
   line-height: 2;
   margin: 4rem 0 6rem 0;
-  font-size:1.7rem;
+  font-size: 1.7rem;
 }
 .learn-more-btn {
   padding: 1.5rem;
   border-radius: 5rem;
   background: var(--very-light-gray);
-   border:1px solid var(--very-light-gray);
+  border: 1px solid var(--very-light-gray);
   text-decoration: none;
   display: inline-block;
   width: 80%;
   text-align: center;
   font: 1.8rem var(--font-Lexend-Deca);
 }
-.learn-more-btn:hover{
-  background:transparent;
- 
+.learn-more-btn:hover {
+  background: transparent;
 }
 .attribution {
   font-size: 1.1rem;
   text-align: center;
-  margin:1rem 0;
-  background:var(--very-light-gray);
-  padding:.3rem;
-  border-radius:.3rem;
-  
+  margin: 1rem 0;
+  background: var(--very-light-gray);
+  padding: 0.3rem;
+  border-radius: 0.3rem;
 }
 .attribution a {
   color: var(--footer-link);
-
 }
 
-@media screen and (max-width:60rem){
+@media screen and (max-width: 60rem) {
   body {
-  display: grid;
-  place-content: center;
-  height:auto
-}
-  main{
-    max-width:32rem;
-    flex-direction: column
+    display: grid;
+    place-content: center;
+    height: auto;
   }
-  
-.sedan-section { 
-  border-radius: 1rem 1rem 0 0;
-}
-  
-.lux-section {  
-  border-radius: 0 0 1rem 1rem;
-}
-  
+  main {
+    max-width: 32rem;
+    flex-direction: column;
+  }
+
+  .sedan-section {
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .lux-section {
+    border-radius: 0 0 1rem 1rem;
+  }
 }
