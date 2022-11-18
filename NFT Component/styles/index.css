@@ -35,8 +35,9 @@ img,
   border-radius: 1.5rem;
 }
 
-p,.avatar-section span {
-  font-size: clamp(1.4rem,1vw,1.5rem);
+p,
+.avatar-section span {
+  font-size: clamp(1.4rem, 1vw, 1.5rem);
   margin: 1rem 0;
 }
 hr {
@@ -69,9 +70,11 @@ hr {
 }
 .product,
 .value-and-time,
-.avatar-section {margin-top: 1rem;}
+.avatar-section {
+  margin-top: 1rem;
+}
 .product-name {
-  font-size: clamp(1.8rem,2.5vw,2rem);
+  font-size: clamp(1.8rem, 2.5vw, 2rem);
 }
 
 .product-name:hover,
@@ -104,7 +107,6 @@ hr {
 }
 .value p {
   color: var(--cyan);
-  
 }
 .time p {
   color: var(--soft-blue);
@@ -118,7 +120,7 @@ hr {
   color: var(--soft-blue);
 }
 .creator-avatar {
-  max-width: clamp(3.5rem, 3.5rem + 1vw, 100%);
+  max-width: clamp(3rem, 2vw, 100%);
   margin-right: 2rem;
 }
 .creator-name {
