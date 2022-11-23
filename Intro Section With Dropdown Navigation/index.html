@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--#region Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--#endregion Fonts-->
+    <link rel="icon" type="favicon" sizes="32x32" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav__wrapper">
+        <figure>
+          <img src="./images/logo.svg" alt="Snap company logo" />
+        </figure>
+        <nav>
+          <div class="feat">
+            <a href="#" style="margin-right: 1rem">Features</a>
+            <img
+              src="images/icon-arrow-up.svg"
+              aria-hidden="true"
+              class="feat__arrow--up"
+            />
+            <img
+              src="images/icon-arrow-down.svg"
+              aria-hidden="true"
+              class="feat__arrow--down hide"
+            />
+
+            <div class="feat__content hide">
+              <a href="#todolist" target="_self">
+                <img src="images/icon-todo.svg" alt="" aria-hidden="true" />
+                Todo List
+              </a>
+
+              <a href="#calendar">
+                <img src="images/icon-calendar.svg" alt="" aria-hidden="true" />
+                Calendar
+              </a>
+
+              <a href="#reminders">
+                <img
+                  src="images/icon-reminders.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+                Reminders
+              </a>
+
+              <a href="#planning">
+                <img src="images/icon-planning.svg" alt="" aria-hidden="true" />
+                Planning
+              </a>
+            </div>
+          </div>
+
+          <div class="company">
+            <a href="#" style="margin-right: 1rem">Company</a>
+            <img
+              src="images/icon-arrow-up.svg"
+              aria-hidden="true"
+              class="company__arrow--up"
+            />
+            <img
+              src="images/icon-arrow-down.svg"
+              aria-hidden="true"
+              class="company__arrow--down hide"
+            />
+            <div class="company__content hide">
+              <a href="#">History</a>
+              <a href="#">Our Team</a>
+              <a href="#">Blog</a>
+            </div>
+          </div>
+
+          <a href="#">Careers</a>
+          <a href="#">About</a>
+        </nav>
+      </div>
+
+      <div class="user__area">
+        <a href="#">Login</a>
+        <a href="#" class="register-btn">Register</a>
+      </div>
+
+      <img
+        src="/images/icon-menu.svg"
+        class="open__menu--btn"
+        alt="Open menu button"
+      />
+    </header>
+    <main>
+      <section>
+        <div class="text__section">
+          <h1>Make remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <a href="#" class="learn__more--btn">Learn More</a>
+
+          <div class="clients__section">
+            <img src="images/client-databiz.svg" alt="" />
+            <img src="images/client-audiophile.svg" alt="" />
+            <img src="images/client-maker.svg" alt="" />
+            <img src="images/client-meet.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="image__section">
+          <picture>
+            <source
+              media="(max-width: 900px)"
+              srcset="/images/image-hero-mobile.png"
+            />
+            <img src="images/image-hero-desktop.png" />
+          </picture>
+        </div>
+      </section>
+      <footer class="attribution">
+        <span>Challenge by</span>
+        <a href="https://www.frontendmentor.io?ref=challenge">
+          Frontend Mentor.
+        </a>
+
+        <span>Coded by</span>
+        <a href="https://github.com/WebDevCampos">Marcus Rangel.</a>
+      </footer>
+    </main>
+
+    <aside>
+      <div class="sidenav">
+        <div class="sidenav__content">
+          <figure class="close__menu--btn">
+            <img src="images/icon-close-menu.svg" alt="Close menu button" />
+          </figure>
+
+          <div class="sidenav__content--links">
+            <details class="feat__details">
+              <summary>Features</summary>
+
+              <div class="feat__details--links">
+                <a href="#todolist" target="_self">
+                  <img src="images/icon-todo.svg" alt="" aria-hidden="true" />
+                  Todo List
+                </a>
+
+                <a href="#calendar">
+                  <img
+                    src="images/icon-calendar.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  Calendar
+                </a>
+
+                <a href="#reminders">
+                  <img
+                    src="images/icon-reminders.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  Reminders
+                </a>
+
+                <a href="#planning">
+                  <img
+                    src="images/icon-planning.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  Planning
+                </a>
+              </div>
+            </details>
+
+            <details class="company__details">
+              <summary>Company</summary>
+
+              <div class="company__details--links">
+                <a href="#">History</a>
+                <a href="#">Our Team</a>
+                <a href="#">Blog</a>
+              </div>
+            </details>
+
+            <a href="#">Careers</a>
+            <a href="#">About</a>
+
+            <div class="sidenav__content--user-area">
+              <a href="#">Login</a>
+              <a href="#" class="register-btn">Register</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/scripts/index.js"></script>
+  </body>
+</html>
