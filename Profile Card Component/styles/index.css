@@ -1,0 +1,127 @@
+@import url(./reset.css);
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+  --font: "Kumbh Sans", sans-serif;
+  --footer-link: hsl(228, 45%, 44%);
+}
+body {
+  font-family: var(--font);
+  color: var(--very-dark-desaturated-blue);
+  padding: 2rem;
+
+  overflow: hidden;
+  background: url(/images/bg-pattern-top.svg) no-repeat,
+    url(/images/bg-pattern-bottom.svg) no-repeat, var(--dark-cyan) no-repeat;
+  background-size: 60%;
+  background-position: -31% 170%, 136% 30rem;
+  transition: 0.5s;
+}
+main {
+  margin: 5% auto 0;
+  padding: 1rem;
+  max-width: 144rem;
+}
+.card__top--user-image img {
+  border-radius: 50%;
+  border: 0.5rem solid hsl(0, 0%, 100%);
+}
+.card {
+  max-width: 37rem;
+  gap: 10rem;
+  background: url(/images/bg-pattern-card.svg) no-repeat top, hsl(0, 0%, 100%);
+  background-size: 100% 35%, 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 8.6rem auto;
+  border-radius: 1.2rem;
+  box-shadow: 1rem 1rem 1rem var(--dark-cyan);
+}
+
+.card__top--user-general {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  top: 7rem;
+  position: relative;
+  align-items: center;
+}
+.card__top--user-info {
+  text-align: center;
+}
+.card__top--user-info p {
+  margin-top: 2rem;
+}
+h1 span,
+.card__top--user-info p {
+  color: var(--dark-gray);
+  font-weight: 400;
+}
+.card__bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  text-align: center;
+  max-width: 100%;
+  border-top: 1px solid var(--very-dark-desaturated-blue);
+}
+.card__bottom h2 span {
+  font-size: 2.4rem;
+  padding: 0;
+  margin: 0 -0.5rem;
+}
+.card__bottom p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.2rem;
+  color: var(--dark-grayish-blue);
+}
+.attribution {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(0, 0%, 100%);
+}
+@media screen and (max-width: 1400px) {
+  body {
+    background-size: 70%;
+    background-position: -72% 140%, 174% 30rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  body {
+    background-position: -68% 208%, 181% 35rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  body {
+    background-size: 80%;
+    background-position: -26rem -26rem, 49rem 40rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  body {
+    background-position: -20rem -26rem, 43rem 40rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    background-size: 100%;
+    background-position: -27rem -19rem, 30rem 35rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    background-position: -13rem -11rem, 24rem 34rem;
+  }
+}
