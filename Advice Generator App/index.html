@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon.ico"
+    />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <title>Frontend Mentor | Advice generator app</title>
+  </head>
+  <body>
+    <main>
+      <h1>
+        Advice #
+        <span class="advice__id"></span>
+      </h1>
+
+      <!-- Advice ID goes here -->
+
+      <blockquote class="advice__text"></blockquote>
+      <picture>
+        <source
+          media="(max-width:500px)"
+          srcset="/images/pattern-divider-mobile.svg"
+        />
+
+        <img src="/images/pattern-divider-desktop.svg" />
+      </picture>
+      <div class="dice"><img src="/images/icon-dice.svg" /></div>
+    </main>
+    <footer class="attribution">
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+          Frontend Mentor
+        </a>
+        . Coded by
+        <a href="https://github.com/WebDevCampos">Marcus Rangel</a>
+        .
+      </p>
+    </footer>
+    <script src="/scripts/index.js"></script>
+  </body>
+</html>
