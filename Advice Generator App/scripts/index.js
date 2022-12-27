@@ -13,4 +13,4 @@ const generateRandomSentence = () => {
 
 dice.addEventListener("click", generateRandomSentence);
 
-window.onload = generateRandomSentence();
+window.addEventListener('load', generateRandomSentence);
